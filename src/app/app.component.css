@@ -1,0 +1,58 @@
+div.page {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+div.conversation-window {
+  background-color: white;
+  height: 600px;
+  margin: 100px auto 0 auto;
+  position: relative;
+  overflow-y: scroll;
+  width: 50%;
+}
+
+div.message {
+  border-radius: 50px;
+  display: block;
+  font-size: 20pt;
+  margin: 30px auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 80%;
+}
+
+div.send {
+  background-color: lightblue;
+  padding-left: 50px;
+  text-align: left;
+}
+
+div.received {
+  background-color: lightgreen;
+  padding-right: 50px;
+  text-align: right;
+}
+
+div.user-input {
+  margin: 30px auto 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+div.user-input input {
+  border-radius: 15px;
+  font-size: 24pt;
+  height: 50px;
+  margin-right: 20px;
+  width: 45%;
+}
+
+div.user-input button {
+  background-color: lightcyan;
+  border-radius: 50px;
+  font-size: 24pt;
+  height: 50px;
+  width: 16%;
+}

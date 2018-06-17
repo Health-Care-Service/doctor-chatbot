@@ -1,9 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
+import {NgxAutoScrollModule} from 'ngx-auto-scroll';
 
 @NgModule({
   declarations: [
@@ -12,9 +14,12 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpClientModule,
+    HttpModule,
+    NgxAutoScrollModule,
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
