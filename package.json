@@ -21,7 +21,9 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "core-js": "^2.4.1",
+    "express": "^4.16.3",
     "rxjs": "^5.1.0",
+    "typescript": "^2.9.2",
     "watson-developer-cloud": "^3.5.0",
     "zone.js": "^0.8.4"
   },
@@ -42,6 +44,6 @@
     "protractor": "~5.1.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
-    "typescript": "~2.2.0"
+    "typescript": "~2.9.2"
   }
 }
