@@ -1,0 +1,498 @@
+{
+	"name": "pwr-ziwm",
+	"intents": [{
+		"intent": "podanie_objawów",
+		"examples": [{
+			"text": "doskwiera mi"
+		},
+		{
+			"text": "mam"
+		},
+		{
+			"text": "boli mnie"
+		},
+		{
+			"text": "czuję że"
+		},
+		{
+			"text": "mam problem z"
+		},
+		{
+			"text": "mam kłopot"
+		},
+		{
+			"text": "mam kłopoty"
+		},
+		{
+			"text": "umieram"
+		},
+		{
+			"text": "ciągle kicham"
+		},
+		{
+			"text": "ciągle"
+		},
+		{
+			"text": "przeszkadza mi"
+		}],
+		"description": ""
+	},
+	{
+		"intent": "przywitanie",
+		"examples": [{
+			"text": "cześć"
+		},
+		{
+			"text": "czesc"
+		},
+		{
+			"text": "witam"
+		},
+		{
+			"text": "dzień dobry"
+		},
+		{
+			"text": "hej"
+		}],
+		"description": ""
+	},
+	{
+		"intent": "dziękuję",
+		"examples": [{
+			"text": "rozumie"
+		},
+		{
+			"text": "rozumiem"
+		},
+		{
+			"text": "dzięki"
+		},
+		{
+			"text": "dzieki"
+		},
+		{
+			"text": "dziekuje"
+		},
+		{
+			"text": "dziękuję"
+		}],
+		"description": ""
+	},
+	{
+		"intent": "diagnoza",
+		"examples": [{
+			"text": "mam problem"
+		},
+		{
+			"text": "coś mi dolega"
+		},
+		{
+			"text": "nie czuję się najlepiej"
+		},
+		{
+			"text": "mam pewne objawy"
+		},
+		{
+			"text": "czy powinienem iść do lekarza?"
+		},
+		{
+			"text": "potrzebuję diagnzoy"
+		}],
+		"description": ""
+	},
+	{
+		"intent": "pożegnanie",
+		"examples": [{
+			"text": "papa"
+		},
+		{
+			"text": "pa pa"
+		},
+		{
+			"text": "do usłyszenia"
+		},
+		{
+			"text": "do widzenia"
+		},
+		{
+			"text": "żegnaj"
+		}],
+		"description": ""
+	}],
+	"entities": [{
+		"entity": "ciało",
+		"values": [{
+			"type": "synonyms",
+			"value": "gardło",
+			"metadata": null,
+			"synonyms": ["przełyk",
+			"tchawica",
+			"krtań",
+			"gardle",
+			"przełyku"]
+		},
+		{
+			"type": "synonyms",
+			"value": "nos",
+			"metadata": null,
+			"synonyms": ["kichawa"]
+		},
+		{
+			"type": "synonyms",
+			"value": "mięśnie",
+			"metadata": null,
+			"synonyms": ["mięśniach",
+			"miesnie",
+			"mięśniowe"]
+		},
+		{
+			"type": "synonyms",
+			"value": "głowa",
+			"metadata": null,
+			"synonyms": ["łeb",
+			"bania"]
+		},
+		{
+			"type": "synonyms",
+			"value": "stawy",
+			"metadata": null,
+			"synonyms": ["kolana",
+			"łokcie",
+			"nadgarstki"]
+		}],
+		"metadata": null,
+		"description": null
+	},
+	{
+		"entity": "objawy",
+		"values": [{
+			"type": "synonyms",
+			"value": "zatkany",
+			"metadata": null,
+			"synonyms": ["zatkany",
+			"zawalony",
+			"cieknący",
+			"cieknie",
+			"leje"]
+		},
+		{
+			"type": "synonyms",
+			"value": "gorączka",
+			"metadata": null,
+			"synonyms": ["temperatrua"]
+		},
+		{
+			"type": "synonyms",
+			"value": "boli",
+			"metadata": null,
+			"synonyms": ["przeszkadza",
+			"utrudnia",
+			"dyskomfort",
+			"bolą"]
+		},
+		{
+			"type": "synonyms",
+			"value": "przełykanie",
+			"metadata": null,
+			"synonyms": ["połykanie",
+			"przełykaniem",
+			"połykaniem"]
+		},
+		{
+			"type": "synonyms",
+			"value": "utrudnione",
+			"metadata": null,
+			"synonyms": ["problematyczne",
+			"bolesne"]
+		},
+		{
+			"type": "synonyms",
+			"value": "kichanie",
+			"metadata": null,
+			"synonyms": ["psikanie",
+			"kicham"]
+		},
+		{
+			"type": "synonyms",
+			"value": "oddychanie",
+			"metadata": null,
+			"synonyms": ["oddech",
+			"dychanie"]
+		},
+		{
+			"type": "synonyms",
+			"value": "ucisk",
+			"metadata": null,
+			"synonyms": ["zwężone",
+			"zwężenie",
+			"zwężony"]
+		},
+		{
+			"type": "synonyms",
+			"value": "umieram",
+			"metadata": null,
+			"synonyms": ["śmierć",
+			"zdycham"]
+		},
+		{
+			"type": "synonyms",
+			"value": "mdleje",
+			"metadata": null,
+			"synonyms": ["omdlewam",
+			"osuwam"]
+		},
+		{
+			"type": "synonyms",
+			"value": "krwawię",
+			"metadata": null,
+			"synonyms": ["krwawie",
+			"krew",
+			"rana"]
+		},
+		{
+			"type": "synonyms",
+			"value": "złamanie",
+			"metadata": null,
+			"synonyms": ["pękniecie",
+			"złamana",
+			"złamane",
+			"zlamane",
+			"zlamana"]
+		}],
+		"metadata": null,
+		"description": null,
+		"fuzzy_match": false
+	}],
+	"language": "en",
+	"metadata": {
+		"api_version": {
+			"major_version": "v1",
+			"minor_version": "2017-05-26"
+		}
+	},
+	"description": "Workspace for university project.",
+	"dialog_nodes": [{
+		"type": "standard",
+		"title": "zbierz_wywiad",
+		"output": {
+			"text": {
+				"values": ["jakie masz dolegliwości?",
+				"jakie masz objawy?",
+				"opowiedz mi jak się czujesz"],
+				"selection_policy": "random"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"metadata": {
+			
+		},
+		"next_step": null,
+		"conditions": "#diagnoza",
+		"description": null,
+		"dialog_node": "node_3_1529076113932",
+		"previous_sibling": "node_1_1529075976299"
+	},
+	{
+		"type": "standard",
+		"title": "nie_rozumiem",
+		"output": {
+			"text": {
+				"values": ["nie rozumiem co masz na myśli",
+				"napisz to inaczej, proszę"],
+				"selection_policy": "random"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"metadata": {
+			
+		},
+		"next_step": null,
+		"conditions": "irrelevant",
+		"description": null,
+		"dialog_node": "node_11_1529077394220",
+		"previous_sibling": "node_6_1529076726421"
+	},
+	{
+		"type": "standard",
+		"title": "podziękuj",
+		"output": {
+			"text": {
+				"values": ["zawsze do usług",
+				"również dziękuję i pozdrawiam"],
+				"selection_policy": "random"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"metadata": {
+			
+		},
+		"next_step": null,
+		"conditions": "#dziękuję",
+		"description": null,
+		"dialog_node": "node_12_1529077893459",
+		"previous_sibling": "node_11_1529077394220"
+	},
+	{
+		"type": "standard",
+		"title": "przeziębienie",
+		"output": {
+			"text": {
+				"values": ["jesteś przeziębiony",
+				"to zwykłe przeziębienie"],
+				"selection_policy": "random"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"metadata": {
+			
+		},
+		"next_step": null,
+		"conditions": "@ciało:nos && @objawy:zatkany || @objawy:utrudnione && @objawy:oddychanie && #podanie_objawów",
+		"digress_in": "does_not_return",
+		"description": null,
+		"dialog_node": "node_8_1529076839860",
+		"previous_sibling": "node_9_1529076863733"
+	},
+	{
+		"type": "standard",
+		"title": "pożegnaj",
+		"output": {
+			"text": {
+				"values": ["do usłyszenia!",
+				"do widzenia!",
+				"na razie!"],
+				"selection_policy": "random"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"metadata": {
+			
+		},
+		"next_step": null,
+		"conditions": "#pożegnanie",
+		"description": null,
+		"dialog_node": "node_2_1529076063380",
+		"previous_sibling": "node_12_1529077893459"
+	},
+	{
+		"type": "standard",
+		"title": "grypa",
+		"output": {
+			"text": {
+				"values": ["masz grypę",
+				"złapałeś grypę"],
+				"selection_policy": "random"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"metadata": {
+			
+		},
+		"next_step": null,
+		"conditions": "@objawy:boli && @ciało:stawy || @objawy:boli && @ciało:głowa || @objawy:gorączka && #podanie_objawów",
+		"digress_in": "does_not_return",
+		"description": null,
+		"dialog_node": "node_9_1529076863733",
+		"previous_sibling": "node_10_1529077282622"
+	},
+	{
+		"type": "standard",
+		"title": "angina",
+		"output": {
+			"text": {
+				"values": ["wygląda na to, że masz anginę",
+				"możliwe, że masz anginę"],
+				"selection_policy": "random"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"metadata": {
+			
+		},
+		"next_step": null,
+		"conditions": "@ciało:gardło && @objawy:ucisk || @objawy:przełykanie && @objawy:utrudnione && #podanie_objawów",
+		"digress_in": "does_not_return",
+		"description": null,
+		"dialog_node": "node_6_1529076726421",
+		"previous_sibling": "node_7_1529076810854"
+	},
+	{
+		"type": "standard",
+		"title": "katar",
+		"output": {
+			"text": {
+				"values": ["spokojnie, to tylko katar",
+				"wygląda na to, że masz katar"],
+				"selection_policy": "random"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"metadata": {
+			
+		},
+		"next_step": null,
+		"conditions": "@objawy:kichanie && #podanie_objawów",
+		"digress_in": "does_not_return",
+		"description": null,
+		"dialog_node": "node_7_1529076810854",
+		"previous_sibling": "node_8_1529076839860"
+	},
+	{
+		"type": "standard",
+		"title": "konsultacja",
+		"output": {
+			"text": {
+				"values": ["Twój problem wymaga konsultacji z lekarzem",
+				"powinieneś udać się z tym do przychodni"],
+				"selection_policy": "random"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"metadata": {
+			
+		},
+		"next_step": null,
+		"conditions": "@objawy:umieram || @objawy:mdleje || @objawy:krwawię || @objawy:złamanie && #podanie_objawów",
+		"digress_in": "does_not_return",
+		"description": null,
+		"dialog_node": "node_10_1529077282622",
+		"previous_sibling": "node_3_1529076113932"
+	},
+	{
+		"type": "standard",
+		"title": "przywitaj",
+		"output": {
+			"text": {
+				"values": ["witam serdecznie!",
+				"dzień dobry!",
+				"cześć, w czym mogę pomóc?"],
+				"selection_policy": "random"
+			}
+		},
+		"parent": null,
+		"context": null,
+		"metadata": {
+			
+		},
+		"next_step": null,
+		"conditions": "#przywitanie",
+		"description": null,
+		"dialog_node": "node_1_1529075976299",
+		"previous_sibling": null
+	}],
+	"workspace_id": "afdb7361-90ec-42e3-aac2-1d64fa6ef571",
+	"counterexamples": [{
+		"text": "jak się czujesz"
+	}],
+	"system_settings": null,
+	"learning_opt_out": false
+}
