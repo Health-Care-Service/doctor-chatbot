@@ -1,7 +1,7 @@
 # DoctorChatbot
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
-To get this to work you have to provide your IBM Watson Assistant service credentials in `server/main.ts` file.
+To get this to work you have to provide your IBM Watson Assistant service credentials in `server/main.ts` file. Whole IBM Watson Assistant workspace configuration was exported and placed in `src/assets/workspace.json` file.
 
 ## Development server
 
